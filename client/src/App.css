@@ -16,6 +16,22 @@
   justify-content: space-between;
 }
 
+.teacher-main {
+  background-image: url("https://vidyanjali.education.gov.in/assets/images/home-banner-1.jpg");
+  height: 910px;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.teacher-title {
+  color: white;
+  margin: auto;
+  font-size: 26px;
+  padding-top:5%;
+  padding-left: 2%;
+}
+
+
 .about-block{
   min-width: 30%;
   min-height: 9%;
@@ -93,4 +109,118 @@ transform: translateX(50px);
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+
+.works
+{
+    padding-top: 2%;
+    background-color: wheat;
+    margin: 10% auto;
+    border: 2px solid #e0dada;
+    border-radius: 14px;
+    /* min-height: 50vh; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.works h1{
+    font-size: 29px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-style: bold;
+}
+
+.works-grid{
+    padding:3%;
+    display:grid;
+    grid-template-columns:30% 30% 30%;
+    grid-row-gap: 4%;
+    grid-column-gap: 4%;
+    min-width: 100%;
+    overflow: hidden;
+    color:white;
+}
+
+.quote {
+  color:white;
+    display: block;
+    /* font-size: 17px; */
+    padding-top: 5%;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.record {
+  color: yellow
+}
+
+.w-grid{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 550px;
+    overflow: hidden;
+    border-radius: 14px;
+    margin-left: 10%;
+}
+.project-description h3{
+    font-size: 1.4rem;
+    padding-top: 2%;
+    letter-spacing: 2px;
+}
+.w-grid .secondary {
+    display: none;
+    text-align: left;
+    /* min-height:17vh; */
+}
+.secondary h4{
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.secondary .btn {
+   margin-left: 35%;
+}
+
+.secondary a{
+    font-size:medium;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.w-grid .initial{
+    padding-top: 30%;
+    transition: all 1s ease;
+}
+.w-grid:hover .initial{
+    color:white;
+     padding-top: 25px;
+}
+.w-grid:hover .secondary {
+    color:white;
+    display: block;
+    /* font-size: 17px; */
+    padding-top: 5%;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+.w-grid:hover{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#splitwise{
+    background:    linear-gradient( rgb(86 86 86 / 22%), rgba(0, 0, 0, 0.5) ),
+    url('https://img.pikbest.com/back_our/bg/20200903/bg/4944fbfc77bca_397993.jpg!w700wp');
+}
+#splitwise:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://img.pikbest.com/back_our/bg/20200903/bg/4944fbfc77bca_397993.jpg!w700wp');
+
 }

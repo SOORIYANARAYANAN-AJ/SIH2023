@@ -1,26 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Home from "./components/Home"
 import './App.css';
-import Button from '@mui/material/Button';
+import Teacher from './components/Teacher';
+import Admin from './components/Admin';
 
-class App extends Component {
+function App() {
+  return (
+    <Router>
+    <div className="App">
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/teacher" component={Teacher}/>
+        <Route exact path="/admin" component={Admin}/>
 
-  render() {
-    return (
-      <div className="App">
-        <div className='content'>
-          <img src="https://freepngimg.com/thumb/categories/1467.png"/>
-        <h1 className="title about-block">  
-        Student Dropout Analysis
-        </h1>
-        <div className='main'>
-        <Button variant="contained">Teacher Login</Button>
-        <Button variant="contained">Admin Login</Button>
-        </div>
-        </div>
-      </div>
-    );
-  }
+      </Switch>
+    </div>
+    </Router>
+  );
 }
 
 export default App;
